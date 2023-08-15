@@ -71,9 +71,9 @@ export default function Cart() {
                 <td>{food.qty}</td>
                 <td>{food.size}</td>
                 <td>{food.price}</td>
-                <td scope='col' ><button className="btn">
+                <th scope='col' ><button className="btn">
                   <img src={trash} alt="Trash Icon" onClick={()=> {dispatch({type:"REMOVE",index :index})}} />
-                </button></td>
+                </button></th>
 
               </tr>
             ))}
