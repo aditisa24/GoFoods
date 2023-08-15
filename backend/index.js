@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
+const path = require('path')
 
 const connectDB = require('./db');
 app.use((req,res,next)=>{
@@ -17,6 +18,11 @@ app.use(express.json())
 app.use('/api', require("./Routes/CreateUser"));
 app.use('/api', require("./Routes/DisplayData"));
 app.use('/api', require("./Routes/OrderData"));
+
+app.use(express.static(path.join(__dirname,'./frontend/build')))
+app.get('*', function(req,res){
+  res.sendFile(path.join(__dirname, './client/build/index.html'))
+})
 
 
 
