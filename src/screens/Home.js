@@ -11,7 +11,7 @@ export default function Home() {
     const [search,setSearch] = useState("");
 
     const loadData = async () => {
-        let response = await fetch("https://gofoods.onrender.com/api/foodData", {
+        let response = await fetch("https://gofoods.onrender.com/foodData", {
             method: "POST",
             headers: {
                 'Content-type': 'application/json'
