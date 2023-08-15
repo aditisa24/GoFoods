@@ -11,7 +11,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5000/api/Loginuser", {
+            const response = await fetch("https://gofoods.onrender.com/api/Loginuser", {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json'
