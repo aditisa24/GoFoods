@@ -19,9 +19,9 @@ app.use('/api', require("./Routes/CreateUser"));
 app.use('/api', require("./Routes/DisplayData"));
 app.use('/api', require("./Routes/OrderData"));
 
-app.use(express.static(path.join(__dirname,'./build')))
+app.use(express.static(path.join(__dirname,'./frontend/build')))
 app.get('*', function(req,res){
-  res.sendFile(path.join(__dirname, './build/index.html'))
+  res.sendFile(path.join(__dirname, './frontend/build/index.html'))
 })
 
 
