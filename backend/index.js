@@ -5,7 +5,7 @@ const path = require('path')
 
 const connectDB = require('./db');
 app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow-Origin","https://gofoods.onrender.com");
+    res.setHeader("Access-Control-Allow-Origin","'https://gofoods-4n6u.onrender.com'");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
     next();
