@@ -35,13 +35,13 @@ export default function Home() {
                     <div className="carousel-inner" id="carousel">
 
                         <div className="carousel-item active">
-                            <img src="https://source.unsplash.com/random/900×700/?pasta" className="d-block w-100" style={{ objectFit: "cover", height: "100vh" }} alt="..." />
+                            <img src="https://img.freepik.com/free-photo/tasty-noodles-wrapped-around-fork_23-2148189932.jpg?semt=ais_hybrid" className="d-block w-100" style={{ objectFit: "cover", height: "100vh" }} alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="https://source.unsplash.com/random/900×700/?pizza" className="d-block w-100" style={{ objectFit: "cover", height: "100vh" }} alt="..." />
+                            <img src="https://img.freepik.com/free-photo/tasty-noodles-wrapped-around-fork_23-2148189932.jpg?semt=ais_hybrid" className="d-block w-100" style={{ objectFit: "cover", height: "100vh" }} alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="https://source.unsplash.com/random/900×700/?burger" className="d-block w-100" style={{ objectFit: "cover", height: "100vh" }} alt="..." />
+                            <img src="https://img.freepik.com/free-photo/tasty-noodles-wrapped-around-fork_23-2148189932.jpg?semt=ais_hybrid" className="d-block w-100" style={{ objectFit: "cover", height: "100vh" }} alt="..." />
                         </div>
                     </div>
                     <div className="carousal-caption m-3 " style={{ zIndex: "10" }}>
