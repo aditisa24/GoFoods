@@ -10,7 +10,7 @@ app.use((req,res,next)=>{
 
     next();
 })
-connectDB();
+connectDB(); //hiii
 
 
 app.use(express.json())
