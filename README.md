@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# GoFoods - Food Ordering Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GoFoods is a full-stack food ordering application built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to sign up, log in, browse food items, add or remove items from their cart, and securely log out. The app is live on [GoFoods](https://gofoods-4n6u.onrender.com/).
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Performance Note](#performance-note)
+- [License](#license)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+GoFoods provides a seamless food ordering experience. Users can easily navigate through the menu, customize their orders, and manage their cart. Built on a robust MERN stack, the app ensures secure user authentication and efficient data handling.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication:** Secure sign up and login with hashed passwords (bcrypt) and JWT-based token authentication.
+- **Dynamic Food Menu:** Browse and select from a variety of food items.
+- **Cart Management:** Add, remove, and review food items in your cart before checkout.
+- **Responsive Design:** Optimized for both desktop and mobile viewing.
+- **Live Deployment:** The application is hosted on Render and is accessible at [GoFoods](https://gofoods-4n6u.onrender.com/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
 
-### `npm run build`
+- **Frontend:** React, React Router, CSS/Bootstrap for styling
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Authentication:** JSON Web Tokens (JWT), bcrypt
+- **Deployment:** Render (free hosting service)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v12 or later)
+- npm or yarn
+- MongoDB (local or cloud instance)
 
-### `npm run eject`
+### Clone the Repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/aditisa24/GoFoods.git
+cd gofoods
+cd my-app
+cd Backend
+```
+##### For Starting the server
+```bash
+npm install
+node index.js
+```
+#### For UI
+```bash
+cd frontend
+npm install
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+```bash
+Sign Up/Login: Create a new account or log in using your existing credentials.
+Browse Menu: Explore the list of available food items.
+Manage Cart: Add or remove items from your cart as needed.
+Checkout: Securely log out after placing your order.
+```
+## Deployment
+```bash
+The app is deployed on Render and available at https://gofoods-4n6u.onrender.com/. Due to the limitations of free hosting, the application might take up to a minute to load on the first request (cold start)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Performance Note
 
-## Learn More
+```bash
+Since the app is hosted on a free service, it may experience a slight delay (up to a minute) during initial load times due to cold start behavior. This is normal and will improve once the app is active.
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
