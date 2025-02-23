@@ -43,10 +43,13 @@ body('password', 'IncorrectPassword').isLength({ min: 4 })],
     async (req, res) => {
         const errors = validationResult(req);    //request data given from frontend
         if (!errors.isEmpty()) {
+            console.log("Validation errors:", errors.array());
             return res.status(400).json({ errors: errors.array() })
         }
 
-        let email = req.body.email   //request data given from frontenf
+        //let email = req.body.email 
+        const { email, password } = req.body;
+//request data given from frontenf
 
         try {
             let userdata = await user.findOne({ email }); //mongodb data. 
@@ -54,7 +57,8 @@ body('password', 'IncorrectPassword').isLength({ min: 4 })],
                 return res.status(400).json({ errors: "Try correct credentials" })
             }   //comparing mongodbdata with data given from frontend
 
-            const pwdCompare = await bcrypt.compare(req.body.password, userdata.password) //comparing hashed password
+            const pwdCompare = await bcrypt.compare(password, userdata.password) //comparing hashed password
+    
             if (!pwdCompare) {
                 return res.status(400).json({ errors: "Try correct credentials" })
             }
@@ -65,6 +69,7 @@ body('password', 'IncorrectPassword').isLength({ min: 4 })],
 
                 }
             }
+            console.log("user", data)
             const authToken = jwt.sign(data,jwtsecret)
             {
                 return res.json({ success: "True",authToken:authToken })  //sending auth token with success
