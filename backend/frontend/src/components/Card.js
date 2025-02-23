@@ -9,11 +9,9 @@ import { useCart, useDispatchCart } from './ContextReducer';
 
 export default function
     Card(props) {
-
     let dispatch = useDispatchCart();
-    //let option = props.options;
-    //let options = props.options;
-    let price = Object.keys(props.options);
+    const price = Object.keys(props.options);
+    console.log(price)
     let data = useCart();
     let fooditem = props.fooditems;
     const [size, setSize] = useState("")
@@ -32,6 +30,7 @@ export default function
 
     }
     let finalPrice = parseInt(props.options[size]) * qty;
+    
 
 
 
@@ -64,16 +63,16 @@ export default function
 
 
 
-                    {/* <div className='d-inline fs-5'>
+                   {/* <div className='d-inline fs-5'>
                             EU {finalPrice/100}  
-                    </div> */}
+                    </div>  */}
                     {/* <div className="d-inline fs-6">
-    EU <span style={{ whiteSpace: 'nowrap' }}>{(finalPrice / 100).toFixed()}</span>
-</div> */}
+    EU <span style={{ whiteSpace: 'nowrap' }}>{(finalPrice / 100).toFixed()}</span> 
+</div>  */}
 
-                    <div className="d-inline fs-6">
+                    {/* <div className="d-inline fs-6">
                         EU {isNaN(finalPrice) ? 0 : <span style={{ whiteSpace: 'nowrap' }}>{(finalPrice / 100).toFixed()}</span>}
-                    </div>
+                    </div> */}
                 </div>
 
                 {(localStorage.getItem("authToken")) ? (

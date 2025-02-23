@@ -29,8 +29,6 @@ export default function Login() {
             }
 
             const json = await response.json();
-     
-            console.log("json",json);
 
             if (!json.success) {
                 alert("Enter valid values");
