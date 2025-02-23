@@ -73,6 +73,7 @@ export default function
                     {/* <div className="d-inline fs-6">
                         EU {isNaN(finalPrice) ? 0 : <span style={{ whiteSpace: 'nowrap' }}>{(finalPrice / 100).toFixed()}</span>}
                     </div> */}
+
                 </div>
 
                 {(localStorage.getItem("authToken")) ? (
