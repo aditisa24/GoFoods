@@ -11,7 +11,7 @@ GoFoods is a full-stack food ordering application built using the MERN stack (Mo
 - [Usage](#usage)
 - [Deployment](#deployment)
 - [Performance Note](#performance-note)
-- [License](#license)
+
 
 ## Overview
 
@@ -62,23 +62,23 @@ npm start
 ```
 
 ## Usage
-```bash
+
 Sign Up/Login: Create a new account or log in using your existing credentials.
 Browse Menu: Explore the list of available food items.
 Manage Cart: Add or remove items from your cart as needed.
 Checkout: Securely log out after placing your order.
-```
+
 ## Deployment
-```bash
+
 The app is deployed on Render and available at https://gofoods-4n6u.onrender.com/. Due to the limitations of free hosting, the application might take up to a minute to load on the first request (cold start)
 
-```
+
 
 ## Performance Note
 
-```bash
+
 Since the app is hosted on a free service, it may experience a slight delay (up to a minute) during initial load times due to cold start behavior. This is normal and will improve once the app is active.
-```
+
 
 
 
